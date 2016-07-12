@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for webcrawl01 project
+# Scrapy settings for webcrawl02 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,10 +9,10 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'webcrawl01'
+BOT_NAME = 'webcrawl02'
 
-SPIDER_MODULES = ['webcrawl01.spiders']
-NEWSPIDER_MODULE = 'webcrawl01.spiders'
+SPIDER_MODULES = ['webcrawl02.spiders']
+NEWSPIDER_MODULE = 'webcrawl02.spiders'
 
 
 ## Database Information
@@ -28,11 +28,11 @@ DATABASE = {'drivername': 'postgres',
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'webcrawl01.pipelines.fsDataPipeline': 300
+    'webcrawl02.pipelines.fsDataPipeline': 300
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'webcrawl01 (+http://www.yourdomain.com)'
+#USER_AGENT = 'webcrawl02 (+http://www.yourdomain.com)'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS=32
@@ -60,13 +60,13 @@ ITEM_PIPELINES = {
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'webcrawl01.middlewares.MyCustomSpiderMiddleware': 543,
+#    'webcrawl02.middlewares.MyCustomSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'webcrawl01.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'webcrawl02.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions

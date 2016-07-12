@@ -8,7 +8,7 @@ from scrapy.selector import Selector
 from ..items import fsData
 
 class firestation(scrapy.Spider):
-    name = "fire"
+    name = "fire_ifnewrecord"
     allowed_domains = ["web.chfd.gov.tw"]
     start_urls = [
         "http://web.chfd.gov.tw/current_case.php"
