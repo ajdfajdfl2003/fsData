@@ -32,7 +32,7 @@ ITEM_PIPELINES = {
 }
 
 # Scrapy Log Level
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'WARNING'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'webcrawl02 (+http://www.yourdomain.com)'
