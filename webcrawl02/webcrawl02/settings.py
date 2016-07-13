@@ -31,6 +31,9 @@ ITEM_PIPELINES = {
     'webcrawl02.pipelines.fsDataPipeline': 300
 }
 
+# Scrapy Log Level
+LOG_LEVEL = 'INFO'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'webcrawl02 (+http://www.yourdomain.com)'
 
