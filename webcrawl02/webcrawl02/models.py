@@ -18,9 +18,9 @@ class Deals(DeclarativeBase):
     __tablename__ = "fsDataIfnewrecord"
 
     timestamp = Column('timestamp', String, primary_key=True)
-    category = Column('category', String, nullable=True)
-    type = Column('type', String, nullable=True)
-    address = Column('address', String, nullable=True)
+    category = Column('category', String, primary_key=True)
+    type = Column('type', String, primary_key=True)
+    address = Column('address', String, primary_key=True)
     assignUnit = Column('assignUnit', String, nullable=True)
     status = Column('status', String, nullable=True)
     allData = Column('allData', JSON, nullable=True)

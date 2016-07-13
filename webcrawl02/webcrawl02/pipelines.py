@@ -6,11 +6,17 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import class_mapper
 from models import Deals, db_connect, create_deals_table
+import logging, sys
 
 class QueryExists(object):
-        def go(self, deal, session):
-                session.query(deal.timestamp)
+    def go(self, deal, session):
+        mapper = class_mapper(Deals)
+        db = session.query(mapper).filter(Deals.timestamp==deal.timestamp,\
+             Deals.category==deal.category, Deals.type==deal.type,\
+             Deals.address==deal.address).first()
+        return db
 
 class fsDataPipeline(object):
     def __init__(self):
@@ -22,9 +28,12 @@ class fsDataPipeline(object):
         session = self.Session()
         deal = Deals(**item)
         try:
-            ## Use merge to avoid duplicate key
-            ## session.merge(deal)
-            exist = QueryExists().go(deal, session)
+            exists = QueryExists().go(deal, session)
+            if exists is None:
+                logging.warning(deal.timestamp+" | "+deal.category+" | "+deal.type+" | "+deal.address+" | "+deal.assignUnit)
+            else:
+                logging.debug("exists")
+            session.merge(deal)
             session.commit()
         except:
             session.rollback()
