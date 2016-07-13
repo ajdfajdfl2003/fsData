@@ -3,7 +3,7 @@ import sys
 import json
 import scrapy
 from scrapy.http import Request, FormRequest
-from scrapy.spider import Spider
+from scrapy.spiders import Spider
 from scrapy.selector import Selector
 from ..items import fsData
 
