@@ -9,10 +9,11 @@ About
 Project
 =======
 - webcrawl01
-    - Description：正式版
+    - Crawl data into PostgreSQL
+    - Send notification when get new data
 
 ## Slack API
 > Refer to : https://github.com/os/slacker
 
 ## 分析網址
-- [彰化縣消防局一一九報案系統即時災情](http://web.chfd.gov.tw/current_case.php)
+> [彰化縣消防局一一九報案系統即時災情](http://web.chfd.gov.tw/current_case.php)
