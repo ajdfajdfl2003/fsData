@@ -25,4 +25,4 @@ Pending Feature
 ===============
 - Add [雲林縣消防局](http://www.ylfire.gov.tw/index.php?inner=realtime)
 - Add [新竹縣消防局](http://fire.hsinchu.gov.tw/info/)
-- Add [台中市消防局](http://fire.hsinchu.gov.tw/info/)
+- Add [台中市消防局](http://www.tccfd.gov.tw/news/index.asp?Parser=9,8,41)
