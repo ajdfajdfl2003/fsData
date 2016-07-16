@@ -4,7 +4,8 @@ fsData
 
 About
 =====
-將彰化縣消防局一一九報案系統即時災情的資料爬下來做統計分析。
+- 將報案系統即時災情的資料爬下來做統計分析。
+- 並將新資料送到 Slack 上
 
 Project
 =======
@@ -24,4 +25,4 @@ Pending Feature
 ===============
 - Add [雲林縣消防局](http://www.ylfire.gov.tw/index.php?inner=realtime)
 - Add [新竹縣消防局](http://fire.hsinchu.gov.tw/info/)
-- Add [台中市消防局](http://fire.hsinchu.gov.tw/info/)
+- Add [台中市消防局](http://www.tccfd.gov.tw/news/index.asp?Parser=9,8,41)
