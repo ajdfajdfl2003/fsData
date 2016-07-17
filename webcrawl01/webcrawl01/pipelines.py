@@ -33,7 +33,7 @@ class fsDataPipeline(object):
             if exists is None:
                 token = Token()
                 slack_robot = Slacker(token.get())
-                slack_robot.chat.post_message('#testingchannel', deal.timestamp[-5::]+" | "+\
+                slack_robot.chat.post_message('#general', deal.timestamp[-5::]+" | "+\
                     deal.type+" | 彰化縣 | "+deal.address+" | "+deal.assignUnit+deal.status, '消防局報案系統即時災情')
             else:
                 pass
